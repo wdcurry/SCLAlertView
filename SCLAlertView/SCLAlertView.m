@@ -445,6 +445,11 @@ SCLTimerDisplay *buttonTimer;
     self.viewText.font = [UIFont fontWithName:_bodyTextFontFamily size:_bodyFontSize];
 }
 
+-(void)setBodyTextFontAlignment:(NSTextAlignment)alignment
+{
+    _viewText.textAlignment = alignment;
+}
+
 - (void)setButtonsTextFontFamily:(NSString *)buttonsFontFamily withSize:(CGFloat)size
 {
     self.buttonsFontFamily = buttonsFontFamily;
