@@ -260,6 +260,13 @@ typedef NS_ENUM(NSInteger, SCLAlertViewBackground)
  */
 - (void)setBodyTextFontFamily:(NSString *)bodyTextFontFamily withSize:(CGFloat)size;
 
+/** Set Body Text field alignment
+ *
+ * @param alignment: any valid NSTextAlignment value
+ *      important as UIAlertView no longer allows this setting.
+ */
+-(void)setBodyTextFontAlignment:(NSTextAlignment)alignment;
+
 /** Set Buttons font family and size
  *
  * @param buttonsFontFamily The family name used to displayed the buttons.
