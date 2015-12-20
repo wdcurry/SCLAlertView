@@ -131,6 +131,11 @@ UITextField *textField = [alert addTextField:@"Enter your name"];
 
 [alert showEdit:self title:@"Edit View" subTitle:@"This alert view shows a text box" closeButtonTitle:@"Done" duration:0.0f];
 ```
+###Alignment of the text of the body of the alert
+```Objective-C
+SCLAlertView *alert = [[SCLAlertView alloc] init];
+[alert setBodyTextFontAlignment:NSTextAlignmentJustified];
+
 
 ###Indeterminate progress
 ```Objective-C
